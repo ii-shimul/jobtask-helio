@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helio Pet Device</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<script src="js/index.js"></script>
+
+<body class="outfit-font">
+  <header class="main-header">
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="#">Shop<span><img class="down-arrow" src="assets/down-arrow-svgrepo-com.svg"
+                alt="down-arrow"></span></a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Science<span><img class="down-arrow" src="assets/down-arrow-svgrepo-com.svg"
+                alt="down-arrow"></span></a></li>
+        <li><a href="#">Results</a></li>
+      </ul>
+      <div class="nav-right">
+        <span class="lang-currency">
+          ENG
+          <span>
+            <img class="down-arrow-currency" src="assets/down-arrow-svgrepo-com.svg" alt="down-arrow">
+          </span>
+          USD
+          <span>
+            <img class="down-arrow-currency" src="assets/down-arrow-svgrepo-com.svg" alt="down-arrow">
+          </span>
+        </span>
+        <span class="divider">|</span>
+        <a href="#" class="cart-icon"><img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
+            alt="Cart" /></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="./assets/product pic variations.jpeg" alt="Woman with dog" />
+          <div class="hero-thumbnails">
+            <img src="./assets/DSC05696 1.jpeg" alt="Thumb1" />
+            <img src="./assets/DSC01882 1.jpeg" alt="Thumb3" />
+            <img src="./assets/dog-device-11_1024x1024.jpg 1.jpeg" alt="Thumb2" />
+            <img src="./assets/sd-3-7_480x480.jpg@2x.jpeg" alt="Thumb4" />
+          </div>
+        </div>
+        <div class="hero-details">
+          <div class="badge-rating">
+            <span class="badge best-seller">Best Seller</span>
+            <span class="rating">★ ★ ★ ★ ★ 4.9 <span class="review-count">(1,021 reviews)</span></span>
+          </div>
+          <h1 class="product-title">Helio Pet Device™</h1>
+          <div class="testimonial-box">
+            <img src="./assets//Ellipse 843.jpeg" alt="">
+            <p>"We are BOTH so THANKFUL! I purchased this for my 12 year old Lab mix as she's got mobility issues with
+              the back legs. It's been 3 weeks and already a difference!"</p>
+          </div>
+          <ul class="product-features">
+            <li>Reduce aches & pains with 5-minute sessions.</li>
+            <hr>
+            <li>Cold Laser Therapy helps with Pain, Information & more.</li>
+            <hr>
+            <li>Professional Grade LLLT with 5 Laser Diodes.</li>
+          </ul>
+          <div class="price-row">
+            <span class="old-price">$369.00</span>
+            <span class="new-price">$249.00</span>
+          </div>
+          <div class="cart-row">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-selector">
+              <button class="qty-btn">-</button>
+              <span class="qty">1</span>
+              <button class="qty-btn">+</button>
+            </div>
+          </div>
+          <div class="payment-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png" alt="PayPal" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" />
+          </div>
+          <div class="guarantee-row">
+            <div><img src="./assets//lucide_shield-check.png" alt=""><span class="money-back">30 day money back</span>
+              guarantee</div>
+            <div><img src="./assets//carbon_delivery-parcel.png" alt="">Expected <span class="money-back">delivery in
+                2-4</span> business days</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <button class="cart-drawer-close" id="cartDrawerClose">&times;</button>
+    <div class="cart-drawer-content">
+      <div id="cartEmptyState">
+        <h2>Your cart is empty</h2>
+        <button class="cart-drawer-continue" id="cartDrawerContinue">Continue shopping</button>
+      </div>
+      <div id="cartProductState" style="display:none;">
+        <div class="cart-drawer-header-row">
+          <h2 class="cart-drawer-title">Your cart</h2>
+          <button class="cart-drawer-close" id="cartDrawerClose2">&times;</button>
+        </div>
+        <div class="cart-free-shipping-box">
+          <div class="cart-free-shipping-msg">Your order is <span id="cartFreeShippingAmount">$21</span> away from
+            standard free shipping.</div>
+          <div class="cart-free-shipping-bar-bg">
+            <div class="cart-free-shipping-bar" id="cartFreeShippingBar"></div>
+          </div>
+        </div>
+        <div class="cart-table-header">
+          <span>Product</span>
+          <span>Total</span>
+        </div>
+        <div class="cart-product-info">
+          <img id="cartProductImg" src="./assets/product pic variations.jpeg" alt="Product" class="cart-product-img">
+          <div class="cart-product-details">
+            <div class="cart-product-title">Helio Pet Device™</div>
+            <div class="cart-product-price-row">
+              <span class="cart-old-price" id="cartOldPrice">$369.00</span>
+              <span class="cart-new-price" id="cartNewPrice">$249.00</span>
+            </div>
+            <div class="cart-product-meta">Color: MidnightBlue</div>
+            <div class="cart-product-meta">Size: L</div>
+            <div class="cart-qty-row">
+              <button class="cart-qty-btn" id="cartQtyMinus">-</button>
+              <span class="cart-qty" id="cartQty">1</span>
+              <button class="cart-qty-btn" id="cartQtyPlus">+</button>
+              <button class="cart-delete-btn" id="cartDeleteBtn">&#128465;</button>
+            </div>
+          </div>
+          <div class="cart-product-total" id="cartProductTotal">$249.00</div>
+        </div>
+        <div class="cart-estimated-row">
+          <span>Estimated total</span>
+          <span id="cartEstimatedTotal">$249.00</span>
+        </div>
+        <button class="cart-checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </aside>
+</body>
+
+</html>
